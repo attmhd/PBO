@@ -6,8 +6,19 @@
 
 //Deklarasi variabel
 int n;
-bool isPrima = true; 
+char c[1];
+bool isPrima = true, isStart = true; 
 
+//Fungsi
+int choices(){
+        printf("Lagi ? [Y/N] : ");
+        scanf( "%c", &c );
+
+        if ((c == 'Y') || (c == 'y'))   isStart = true;
+        else if ((c == 'N') || (c == 'n'))  isStart = false;
+        else printf("Pilihan yang anda Masukkan Out Of Context \n");
+        return isStart;
+}
 
 //Fungsi untuk tampilan head dan input angka
 int head(){
@@ -38,7 +49,12 @@ void isPrimar(){
 }
 
 int main(){
-    head();
-    formula();
-    isPrimar();
+    do
+    {
+        head();
+        formula();
+        isPrimar();
+        choices();
+
+    } while (isStart!= false );
 }
