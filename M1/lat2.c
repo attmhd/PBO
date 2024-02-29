@@ -21,9 +21,11 @@ int menu(){
     return choice; 
 }
 
-int lkLingkaran(int r){
-    int luas = phi * pow(r,2);
-    int keliling = 2 * phi * r;
+int lkLingkaran(int r, int* luas, int* keliling){
+    *luas = phi * pow(r,2);
+    *keliling = 2 * phi * r;
+
+    return *luas, *keliling;
 }
 
 int main(){
