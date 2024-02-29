@@ -36,9 +36,8 @@ int formula(){
 
 //Prosedur untuk cek bilangan Prima
 void isPrimar(){
-    bool isPrima = formula();
 
-    if (isPrima == true)   printf("\n%i merupakan bilangan prima \n",n);
+    if (formula() == true)   printf("\n%i merupakan bilangan prima \n",n);
     else    printf("%i bukan bilangan prima \n",n);
 }
 
