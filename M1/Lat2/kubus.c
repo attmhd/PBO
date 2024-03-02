@@ -4,7 +4,7 @@ int s, v;
 
 //Fungsi formula volume kubus
 int vKubus(int s){
-    v = pow(s, 3);
+    v = s * s * s;
 
     return v;
 }
@@ -12,6 +12,6 @@ int vKubus(int s){
 void akubus(){
     printf("Inputkan nilai sisi [dalam cm]: ");
     scanf("%d", &s);
-    lkBujurSangkar(s);
-    printf("Volume : %d dengan sisi : %d \n", v, s);   
+    vKubus(s);
+    printf("Volume : %d dengan sisi : %d \n\n", v, s);   
 }

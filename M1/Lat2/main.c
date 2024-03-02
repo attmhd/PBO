@@ -1,7 +1,11 @@
 //Program menghitung luas, keliling dan volume 
 #include <stdio.h>
-#include <math.h>
-#include "lingkaran.c" "persegipanjang.c" "bujursangkar.c" "tabung.c" "kubus.c"
+#include "menu.c"
+#include "lingkaran.c" 
+#include "persegipanjang.c"
+#include "bujursangkar.c"
+#include "tabung.c" 
+#include "kubus.c"
 
 //Deklarasi Variabel
 int choice;

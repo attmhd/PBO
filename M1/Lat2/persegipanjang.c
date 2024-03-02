@@ -17,5 +17,5 @@ void apersegiPanjang(){
     printf("\nLebar: ");
     scanf("%d", &l);
     lkPersegiPanjang(p, l, &luas, &keliling);
-    printf("\nLuas : %d dan Keliling : %d dengan panjang : %d  dan lebar : %d \n", luas, keliling, p, l);
+    printf("\nLuas : %d dan Keliling : %d dengan panjang : %d  dan lebar : %d \n\n", luas, keliling, p, l);
 }
