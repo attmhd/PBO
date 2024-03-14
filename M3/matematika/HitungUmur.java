@@ -5,6 +5,8 @@
  */
 package matematika;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author rosify
@@ -14,15 +16,26 @@ import java.util.Scanner;
 
 public class HitungUmur {
     public static void main(String[] args){
-        int  tlahir  ,currentDate = 2024;
+        int  tahun , bulan ,tahunIni = 2024, bulanIni = 3, ttl_bulan;
         
         Scanner input = new Scanner(System.in);  // Create a Scanner object
         System.out.print("Masukkan tahun lahir anda : ");
+        tahun = input.nextInt();
+        System.out.print("Masukkan bulan lahir anda : ");
+        bulan = input.nextInt();
 
-        tlahir = input.nextInt();
+        LocalDate date = LocalDate.now();
+        tahunIni = date.getYear();
+        bulanIni = date.getMonthValue();
 
-        int umur = currentDate - tlahir;
-        System.out.printf("Umur anda saat ini : %d tahun \n " , umur);
+        ttl_bulan = ((tahunIni * 12 + bulanIni) - (tahun * 12 + bulan));
+        
+        int[] result = new int[2];
+        result[0] = ttl_bulan / 12;
+        result[1] = ttl_bulan % 12; 
+        System.out.printf("Umur anda saat ini : %d tahun %d bulan \n " , result[0], result[1]);
 
     }
 }
+
+
