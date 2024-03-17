@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int s, luas, keliling;
+float s, luas, keliling;
 
 //Fungsi formula luas & keliling bujur sangkar
-int lkBujurSangkar(int s, int* luas, int* keliling){
+float lkBujurSangkar(float s, float* luas, float* keliling){
     *luas = s * s;
     *keliling = 4 * s;
 
@@ -12,7 +12,7 @@ int lkBujurSangkar(int s, int* luas, int* keliling){
 
 void abujurSangkar(){
     printf("Inputkan nilai sisi [dalam cm]: ");
-    scanf("%d", &s);
+    scanf("%f", &s);
     lkBujurSangkar(s, &luas, &keliling);
-    printf("Luas : %d dan Keliling : %d dengan sisi : %d \n\n", luas, keliling, s);
+    printf("Luas : %.2f dan Keliling : %.2f dengan sisi : %.2f \n\n", luas, keliling, s);
 }

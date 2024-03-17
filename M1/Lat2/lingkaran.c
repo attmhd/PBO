@@ -1,10 +1,10 @@
 #include <stdio.h>
 #define phi 3.14
 
-int r, luas, keliling;
+float r, luas, keliling;
 
 //Fungsi formula luas & keliling lingkaran
-int lkLingkaran(int r, int* luas, int* keliling){
+float lkLingkaran(float r, float* luas, float* keliling){
     *luas = phi * r * r;
     *keliling = 2 * phi * r;
 
@@ -13,7 +13,7 @@ int lkLingkaran(int r, int* luas, int* keliling){
 
 void alingkaran(){
     printf("Inputkan nilai jari-jari [dalam cm]: ");
-    scanf("%d", &r);
+    scanf("%f", &r);
     lkLingkaran(r, &luas, &keliling);
-    printf("Luas : %d  dan Keliling : %d  lingkaran dengan Jari-jari : %d \n\n", luas, keliling, r);
+    printf("Luas : %.2f  dan Keliling : %.2f  lingkaran dengan Jari-jari : %.2f \n\n", luas, keliling, r);
 }

@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int s, v;
+float s, v;
 
 //Fungsi formula volume kubus
-int vKubus(int s){
+float vKubus(float s){
     v = s * s * s;
 
     return v;
@@ -11,7 +11,7 @@ int vKubus(int s){
 
 void akubus(){
     printf("Inputkan nilai sisi [dalam cm]: ");
-    scanf("%d", &s);
+    scanf("%f", &s);
     vKubus(s);
-    printf("Volume : %d dengan sisi : %d \n\n", v, s);   
+    printf("Volume : %.2f dengan sisi : %.2f \n\n", v, s);   
 }

@@ -7,12 +7,12 @@ package matematika;
 
 import java.time.LocalDate;
 
+import java.util.Scanner;
 /**
  *
  * @author rosify
  */
 
-import java.util.Scanner;
 
 public class HitungUmur {
     public static void main(String[] args){
