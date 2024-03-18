@@ -33,8 +33,8 @@ public class KonversiTahun {
     static int[] konversi(int tahun){
         int  bulan, minggu, hari, jam, menit, detik ;
         bulan = tahun * 12;
-        minggu = bulan * 4;
-        hari = minggu * 7;
+        hari = 365 * tahun;
+        minggu = 365 / 7;
         jam = hari * 24;
         menit = jam * 60;
         detik = menit * 60;

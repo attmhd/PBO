@@ -10,6 +10,10 @@ package Lat1;
  * @author LAB 2.2
  */
 public class SayHello {
+
+    public String Hello(String name){
+        return "Hello " + name;
+    }
     public static void main(String[] args){
         System.out.println("Hello Java");
     }
