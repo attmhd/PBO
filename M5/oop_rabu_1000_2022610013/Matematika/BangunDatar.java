@@ -2,8 +2,8 @@ package M5.oop_rabu_1000_2022610013.Matematika;
 
 public class BangunDatar {
 
+    int p, l, s;
     private int L, k;
-    int p, l,  s;
 
     int[] HitungLuasKelilingPersegiPanjang(){
 

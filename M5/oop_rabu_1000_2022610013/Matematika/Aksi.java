@@ -9,12 +9,17 @@ public class Aksi {
         BangunDatar BujurSangkar = new BangunDatar();
 
         PersegiPanjang.p = 10;
-        PersegiPanjang.l = 10;
+        PersegiPanjang.l = 5;
 
-        PersegiPanjang.HitungLuasKelilingPersegiPanjang();
+        int[] resultA = PersegiPanjang.HitungLuasKelilingPersegiPanjang();
+
+        System.out.printf("Luas = %d dan Keliling = %d \n", resultA[0] , resultA[1]);
 
         BujurSangkar.s = 10;
-        BujurSangkar.HitungLuasKelilingBujurSangkar();
+        
+        int[] resultB = BujurSangkar.HitungLuasKelilingBujurSangkar();
+
+        System.out.printf("Luas = %d dan Keliling = %d \n", resultB[0] , resultB[1]);
     }
 
 }
